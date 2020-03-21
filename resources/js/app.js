@@ -4,6 +4,7 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -42,6 +43,13 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+import Login from "./components/auth/Login";
+import store from "./store";
+
 const app = new Vue({
     el: '#app',
+    store,
+    components: {
+        Login
+    }
 });
