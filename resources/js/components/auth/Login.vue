@@ -38,6 +38,8 @@
 </template>
 
 <script>
+    import {mapActions} from 'vuex';
+
     export default {
         name: "Login",
 
@@ -49,10 +51,14 @@
         },
 
         methods: {
+            ...mapActions(['retrieveToken']),
+
             login() {
                 this.retrieveToken({
                     username: this.username,
                     password: this.password
+                }).then((response) => {
+                    this.$router.push({name: 'home'})
                 });
             }
         }
