@@ -25,60 +25,58 @@
     <title> Rapo - Premium dashboard ui bootstrap rwd admin html5 template </title>
 
     <!-- Favicon -->
-    <link rel="icon" href="../assets/img/brand/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="/public/img/brand/favicon.ico" type="image/x-icon"/>
 
     <!-- Icons css -->
-    <link href="../assets/css/icons.css" rel="stylesheet">
+    <link href="/public/css/icons.css" rel="stylesheet">
 
     <!--  Right-sidemenu css -->
-    <link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link href="/public/plugins/sidebar/sidebar.css" rel="stylesheet">
 
     <!--  Custom Scroll bar-->
-    <link href="../assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="/public/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
 
     <!--  Left-Sidebar css -->
-    <link rel="stylesheet" href="../assets/plugins/side-menu/closed/sidemenu.css">
+    <link rel="stylesheet" href="/public/plugins/side-menu/closed/sidemenu.css">
 
     <!--- Dashboard-1 css-->
-    <link href="../assets/css/bootstrap-custom.css" rel="stylesheet">
-    <link href="../assets/css/style.css" rel="stylesheet">
-    <link href="../assets/css/style-dark.css" rel="stylesheet">
+    <link href="/public/css/bootstrap-custom.css" rel="stylesheet">
+    <link href="/public/css/style.css" rel="stylesheet">
+    <link href="/public/css/style-dark.css" rel="stylesheet">
 
     <!--- Animations css-->
-    <link href="../assets/css/animate.css" rel="stylesheet">
+    <link href="/public/css/animate.css" rel="stylesheet">
 
 </head>
-<body class="main-body" id="app">
+<body>
 
-<global-loader></global-loader>
+<div class="main-body" id="app">
+    <global-loader></global-loader>
 
-<app></app>
-
-<!-- main-signin-wrapper -->
-
-<!-- /main-signin-wrapper -->
+    <app></app>
+</div>
 
 <!-- JQuery min js -->
-<script src="../assets/plugins/jquery/jquery.min.js"></script>
+<script src="/public/plugins/jquery/jquery.min.js"></script>
 
 <!-- Bootstrap Bundle js -->
-<script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Ionicons js -->
-<script src="../assets/plugins/ionicons/ionicons.js"></script>
+<script src="/public/plugins/ionicons/ionicons.js"></script>
 
 <!-- Moment js -->
-<script src="../assets/plugins/moment/moment.js"></script>
+<script src="/public/plugins/moment/moment.js"></script>
 
 <!-- eva-icons js -->
-<script src="../assets/js/eva-icons.min.js"></script>
+<script src="/public/js/eva-icons.min.js"></script>
 
 <!-- Rating js-->
-<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
-<script src="../assets/plugins/rating/jquery.barrating.js"></script>
+<script src="/public/plugins/rating/jquery.rating-stars.js"></script>
+<script src="/public/plugins/rating/jquery.barrating.js"></script>
 
 <!-- Custom js -->
-<script src="../assets/js/custom.js"></script>
+<script src="/public/js/custom.js"></script>
 
 </body>
 </html>

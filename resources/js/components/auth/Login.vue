@@ -4,7 +4,8 @@
             <div class="wd-md-50p login d-none d-md-block page-signin-style p-5 text-white">
                 <div class="my-auto authentication-pages">
                     <div>
-                        <a href="index.html"><img src="../assets/img/brand/logo-white.png"
+                        <a href="index.html">
+                            <img src="/public/img/brand/logo-white.png"
                                                   class="main-logo-pages m-0 mb-4" alt="logo"></a>
                         <h5 class="mb-4">Responsive Modern Dashboard &amp; Admin Template</h5>
                         <p class="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem

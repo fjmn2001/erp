@@ -1,6 +1,8 @@
 <template>
-    <div class="my-auto page page-h">
-        <router-view :key="$route.fullPath"></router-view>
+    <div>
+        <div class="my-auto page page-h">
+            <router-view :key="$route.fullPath"></router-view>
+        </div>
     </div>
 </template>
 
