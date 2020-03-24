@@ -22,11 +22,10 @@
     <!-- Title -->
     <title> Rapo - Premium dashboard ui bootstrap rwd admin html5 template </title>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="icon" href="/public/img/brand/favicon.ico" type="image/x-icon"/>
-
-    <!-- Icons css -->
-    <link href="/public/css/icons.css" rel="stylesheet">
 
     <!--  Right-sidemenu css -->
     <link href="/public/plugins/sidebar/sidebar.css" rel="stylesheet">
@@ -36,14 +35,6 @@
 
     <!--  Left-Sidebar css -->
     <link rel="stylesheet" href="/public/plugins/side-menu/closed/sidemenu.css">
-
-    <!--- Dashboard-1 css-->
-    <link href="/public/css/bootstrap-custom.css" rel="stylesheet">
-    <link href="/public/css/style.css" rel="stylesheet">
-    <link href="/public/css/style-dark.css" rel="stylesheet">
-
-    <!--- Animations css-->
-    <link href="/public/css/animate.css" rel="stylesheet">
 
 </head>
 <body>
