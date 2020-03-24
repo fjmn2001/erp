@@ -1,168 +1,86 @@
+/* ########## BOOTSTRAP OVERRIDES ########## */
 
-/*------------------------------------------------------------------
-[Master Stylesheet]
-
-Project        :   Rapo - HTML5 Bootstrap Admin Template
-Version        :   V.1
-Create Date    :   10/03/20
-Copyright      :   Spruko Technologies Private Limited 
-Author         :   SprukoSoft
-Author URL     :   https://themeforest.net/user/sprukosoft
-Support	       :   support@spruko.com
-License        :   Licensed under ThemeForest License
-
--------------------------------------------------------------------*/
-
-/*
-1.  Accordions
-2.  Alerts
-3.  Badges
-4.  Breadcrumbs
-5.  Buttons
-6.  Card
-7.  Carousel
-8.  Dropdown
-9.  Forms
-10. Grid
-11. Input-group
-12. Modals
-13. Navigation
-14. Pagination
-15. Popover
-16. Progress
-17. Tables
-18. Toast
-19. Tooltip
-20. Main-content
-21. Header
-22. Horizontal-menu
-23. Profile
-24. Iconbar
-25. Datatable
-26. Date-picker
-27. Date-time-picker
-28. Jqvmap
-29. Chart
-30. Parsely
-31. Rangeslider
-32. Select2
-33. Spectrum
-34. Calendar
-35. Chat
-36. Contacts
-37. Error
-38. Invoice
-39. Mail
-40. Profile
-41. Background
-42. Border
-43. Height
-44. Margin
-45. Opacity
-46. Padding
-47. Position
-48. Typography
-49. Width
-50. Tags
-51. Navbar
-52. Wizard
-53. P-scroll
-54. Rating
-55. Timeline
-56. Countdown
-57. Image
-58. List
-59. Checkbox
-60  Radio
-61. Toggle
-62  Listgroup
-63  Jumborton
-64  Custom-control
-65  Custom-styles
-*/
-
-@import "custom/fonts/fonts";
+@import "../scss/variables";
+@import "../scss/bootstrap/accordions";
+@import "../scss/bootstrap/alerts";
+@import "../scss/bootstrap/badges";
+@import "../scss/bootstrap/breadcrumbs";
+@import "../scss/bootstrap/buttons";
+@import "../scss/bootstrap/cards";
+@import "../scss/bootstrap/carousel";
+@import "../scss/bootstrap/dropdown";
+@import "../scss/bootstrap/forms";
+@import "../scss/bootstrap/grid";
+@import "../scss/bootstrap/input-group";
+@import "../scss/bootstrap/modals";
+@import "../scss/bootstrap/navigation";
+@import "../scss/bootstrap/pagination";
+@import "../scss/bootstrap/popover";
+@import "../scss/bootstrap/progress";
+@import "../scss/bootstrap/tables";
+@import "../scss/bootstrap/toast";
+@import "../scss/bootstrap/tooltip";
 
 
 /* ########## BOOTSTRAP OVERRIDES ########## */
-@import "variables";
-@import "bootstrap/accordions";
-@import "bootstrap/alerts";
-@import "bootstrap/badges";
-@import "bootstrap/breadcrumbs";
-@import "bootstrap/buttons";
-@import "bootstrap/cards";
-@import "bootstrap/carousel";
-@import "bootstrap/dropdown";
-@import "bootstrap/forms";
-@import "bootstrap/grid";
-@import "bootstrap/input-group";
-@import "bootstrap/modals";
-@import "bootstrap/navigation";
-@import "bootstrap/pagination";
-@import "bootstrap/popover";
-@import "bootstrap/progress";
-@import "bootstrap/tables";
-@import "bootstrap/toast";
-@import "bootstrap/tooltip";
 
-/* ########## LAYOUTS ########## */
-@import "layouts/main-content";
-@import "layouts/header";
-@import "layouts/horizontal-menu";
-@import "layouts/footer";
-@import "layouts/sidebar";
-@import "layouts/left-menu";
-@import "layouts/right-sidebar";
-@import "layouts/profile";
-@import "layouts/iconbar";
+@import "../scss/layouts/main-content";
+@import "../scss/layouts/header";
+@import "../scss/layouts/horizontal-menu";
+@import "../scss/layouts/footer";
+@import "../scss/layouts/sidebar";
+@import "../scss/layouts/left-menu";
+@import "../scss/layouts/right-sidebar";
+@import "../scss/layouts/profile";
+@import "../scss/layouts/iconbar";
 
-/* ############### LIB ############### */
-@import "lib/datatable";
-@import "lib/datepicker";
-@import "lib/datetimepicker";
-@import "lib/jqvmap";
-@import "lib/chart";
-@import "lib/parsely";
-@import "lib/rangeslider";
-@import "lib/select2";
-@import "lib/spectrum";
+
+/* ############### CUSTOM VENDOR STYLES ############### */
+@import "../scss/lib/datatable";
+@import "../scss/lib/datepicker";
+@import "../scss/lib/datetimepicker";
+@import "../scss/lib/jqvmap";
+@import "../scss/lib/chart";
+@import "../scss/lib/parsely";
+@import "../scss/lib/rangeslider";
+@import "../scss/lib/select2";
+@import "../scss/lib/spectrum";
 
 /* ############### TEMPLATE STYLES ############### */
-@import "template/calendar";
-@import "template/chat";
-@import "template/contacts";
-@import "template/error";
-@import "template/iconbar";
-@import "template/invoice";
-@import "template/mail";
-@import "template/profile";
+@import "../scss/template/calendar";
+@import "../scss/template/chat";
+@import "../scss/template/contacts";
+@import "../scss/template/error";
+@import "../scss/template/invoice";
+@import "../scss/template/mail";
+@import "../scss/template/profile";
 
 /* ############### UTILITIES/HELPER CLASSES ############### */
-@import "util/background";
-@import "util/border";
-@import "util/height";
-@import "util/margin";
-@import "util/opacity";
-@import "util/padding";
-@import "util/position";
-@import "util/typography";
-@import "util/width";
+@import "../scss/util/background";
+@import "../scss/util/border";
+@import "../scss/util/height";
+@import "../scss/util/margin";
+@import "../scss/util/opacity";
+@import "../scss/util/padding";
+@import "../scss/util/position";
+@import "../scss/util/typography";
+@import "../scss/util/width";
+
 
 /* ############### CUSTOM ELEMENT STYLES ############### */
-@import "custom/tags";
-@import "custom/navbar";
-@import "custom/wizard";
-@import "custom/p-scroll";
-@import "custom/rating";
-@import "custom/timeline";
-@import "custom/countdown";
-@import "custom/image";
-@import "custom/list";
-@import "custom/checkbox";
-@import "custom/radio";
-@import "custom/toggle";
-@import "custom/listgroup";
-@import "custom/jumborton";
-@import "custom/custom-control";
-@import "custom/custom-styles";
+@import "../scss/custom/tags";
+@import "../scss/custom/navbar";
+@import "../scss/custom/wizard";
+@import "../scss/custom/p-scroll";
+@import "../scss/custom/rating";
+@import "../scss/custom/timeline";
+@import "../scss/custom/countdown";
+@import "../scss/custom/image";
+@import "../scss/custom/list";
+@import "../scss/custom/checkbox";
+@import "../scss/custom/toggle";
+@import "../scss/custom/listgroup";
+@import "../scss/custom/jumborton";
+@import "../scss/custom/custom-control";
+@import "../scss/custom/custom-styles";
+
