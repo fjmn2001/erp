@@ -7,8 +7,16 @@
 </template>
 
 <script>
+    import template from './../template';
+
     export default {
-        name: "App"
+        name: "App",
+
+        mounted() {
+            Vue.nextTick(() => {
+                template();
+            });
+        }
     }
 </script>
 
