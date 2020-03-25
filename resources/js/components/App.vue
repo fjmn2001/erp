@@ -1,6 +1,7 @@
 <template>
     <div>
         <transition name="router-animation"
+                    mode="out-in"
                     enter-active-class="animated fadeIn"
                     leave-active-class="animated fadeOut">
             <router-view :key="$route.fullPath"></router-view>

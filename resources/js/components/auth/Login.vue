@@ -9,7 +9,8 @@
                                 <img src="/public/img/brand/logo-white.png"
                                      class="main-logo-pages m-0 mb-4" alt="logo"></a>
                             <h5 class="mb-4">Responsive Modern Dashboard &amp; Admin Template</h5>
-                            <p class="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            <p class="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem
                                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                                 printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <a href="index.html" class="btn btn-pink">Learn More</a>
@@ -37,7 +38,11 @@
                                 <input class="form-control" placeholder="Enter your password"
                                        type="password" v-model="password">
                             </div>
-                            <button type="submit" class="btn btn-main-primary btn-block">Sign In</button>
+                            <button type="submit" class="btn btn-main-primary btn-block" :disabled="loading">
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"
+                                      v-show="loading"></span>
+                                Sign In
+                            </button>
                         </form>
                     </div>
                     <div class="main-signin-footer mt-3 mg-t-5">
@@ -62,7 +67,8 @@
             return {
                 username: '',
                 password: '',
-                serverError: ''
+                serverError: '',
+                loading: false
             };
         },
 
@@ -70,6 +76,7 @@
             ...mapActions(['retrieveToken']),
 
             login() {
+                this.loading = true;
                 this.retrieveToken({
                     username: this.username,
                     password: this.password
@@ -78,7 +85,7 @@
                 }).catch(error => {
                     this.serverError = error.response.data;
                     this.password = '';
-                });
+                }).finally(() => this.loading = false);
             }
         }
     }
