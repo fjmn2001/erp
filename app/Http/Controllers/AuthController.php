@@ -28,10 +28,8 @@ class AuthController extends Controller
 
             return $response->getBody();
         } catch (BadResponseException $e) {
-            if ($e->getCode() === 400) {
-                return response()->json('Invalid request. Please enter a username o a password.', $e->getCode());
-            } else if ($e->getCode() === 401) {
-                return response()->json('Your credentials are incorrect. Please try again.', $e->getCode());
+            if (in_array($e->getCode(), [400, 401])) {
+                return response()->json('Sus credenciales no son incorrectos.', $e->getCode());
             }
 
             //return response()->json($e->getMessage(), $e->getCode());
