@@ -29,20 +29,23 @@
                         <div class="form-group">
                             <label>Firstname &amp; Lastname</label>
                             <input class="form-control" placeholder="Enter your firstname and lastname" type="text"
+                                   :class="{'input-error': errors.has('name')}"
                                    v-model="name" v-validate="'required'" name="name">
-                            <span>{{ errors.first('name') }}</span>
+                            <span class="form-error">{{ errors.first('name') }}</span>
                         </div>
                         <div class="form-group">
                             <label>Email</label>
                             <input class="form-control" placeholder="Enter your email" type="text"
+                                   :class="{'input-error': errors.has('email')}"
                                    v-model="email" v-validate="'required|email'" name="email">
-                            <span>{{ errors.first('email') }}</span>
+                            <span class="form-error">{{ errors.first('email') }}</span>
                         </div>
                         <div class="form-group">
                             <label>Password</label>
                             <input class="form-control" placeholder="Enter your password"
+                                   :class="{'input-error': errors.has('password')}"
                                    type="password" v-model="password" v-validate="'required|min:8'" name="password">
-                            <span>{{ errors.first('password') }}</span>
+                            <span class="form-error">{{ errors.first('password') }}</span>
                         </div>
                         <button type="submit" class="btn btn-main-primary btn-block">Create Account</button>
                     </form>
