@@ -1,8 +1,10 @@
 <template>
     <div>
-        <div class="my-auto page page-h">
+        <transition name="router-animation"
+                    enter-active-class="animated fadeIn"
+                    leave-active-class="animated fadeOut">
             <router-view :key="$route.fullPath"></router-view>
-        </div>
+        </transition>
     </div>
 </template>
 
