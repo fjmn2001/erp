@@ -84,6 +84,10 @@
                             email: this.email,
                             password: this.password
                         }).then(response => {
+                            this.$toast.success({
+                                title:'Registered successfully',
+                                message:'You can login here'
+                            });
                             this.$router.push({name: 'login'})
                         }).catch(error => {
                             this.serverErrors = Object.values(error.response.data.errors);
