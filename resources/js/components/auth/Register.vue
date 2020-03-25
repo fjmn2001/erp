@@ -27,16 +27,22 @@
                             <div v-for="(se, key) in serverErrors" :key="key">{{se[0]}}</div>
                         </div>
                         <div class="form-group">
-                            <label>Firstname &amp; Lastname</label><input class="form-control"
-                                                                           placeholder="Enter your firstname and lastname"
-                                                                           type="text" v-model="name">
+                            <label>Firstname &amp; Lastname</label>
+                            <input class="form-control" placeholder="Enter your firstname and lastname" type="text"
+                                   v-model="name" v-validate="'required'" name="name">
+                            <span>{{ errors.first('name') }}</span>
                         </div>
                         <div class="form-group">
-                            <label>Email</label> <input class="form-control" placeholder="Enter your email" type="text" v-model="email">
+                            <label>Email</label>
+                            <input class="form-control" placeholder="Enter your email" type="text"
+                                   v-model="email" v-validate="'required|email'" name="email">
+                            <span>{{ errors.first('email') }}</span>
                         </div>
                         <div class="form-group">
-                            <label>Password</label> <input class="form-control" placeholder="Enter your password"
-                                                           type="password" v-model="password">
+                            <label>Password</label>
+                            <input class="form-control" placeholder="Enter your password"
+                                   type="password" v-model="password" v-validate="'required|min:8'" name="password">
+                            <span>{{ errors.first('password') }}</span>
                         </div>
                         <button type="submit" class="btn btn-main-primary btn-block">Create Account</button>
                     </form>
@@ -68,14 +74,18 @@
             ...mapActions(['retrieveToken']),
 
             register() {
-                this.$store.dispatch('register', {
-                    name: this.name,
-                    email: this.email,
-                    password: this.password
-                }).then(response => {
-                    this.$router.push({name: 'login'})
-                }).catch(error => {
-                    this.serverErrors = Object.values(error.response.data.errors);
+                this.$validator.validateAll().then((result) => {
+                    if(result){
+                        this.$store.dispatch('register', {
+                            name: this.name,
+                            email: this.email,
+                            password: this.password
+                        }).then(response => {
+                            this.$router.push({name: 'login'})
+                        }).catch(error => {
+                            this.serverErrors = Object.values(error.response.data.errors);
+                        });
+                    }
                 });
             }
         }
