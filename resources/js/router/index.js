@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import Login from "../components/auth/Login";
+import Register from "../components/auth/Register";
 import Home from "../components/Home";
 import Logout from "../components/auth/Logout";
 import store from "../store";
@@ -15,6 +16,14 @@ const router = new VueRouter({
             path: '/login',
             name: 'login',
             component: Login,
+            meta: {
+                requiresVisitor: true
+            }
+        },
+        {
+            path: '/register',
+            name: 'register',
+            component: Register,
             meta: {
                 requiresVisitor: true
             }
